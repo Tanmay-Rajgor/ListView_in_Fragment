@@ -34,7 +34,7 @@ public class SecondActivity extends AppCompatActivity {
         FragmentSecond fragmentSecond = new FragmentSecond();
 
         Bundle bundle = new Bundle();
-        bundle.getInt("position", position);
+        bundle.putInt("position", position);
         fragmentSecond.setArguments(bundle);
         fragmentTransaction.add(R.id.frameLayout, fragmentSecond);
         fragmentTransaction.commit();
